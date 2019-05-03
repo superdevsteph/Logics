@@ -13,7 +13,7 @@ public class AttackMode extends Mode {
 	public String getSCode() {
 		int secretCode = 1000 + (int) (Math.random() * ((10000 - 1000) + 1));
 		String sCode = String.valueOf(secretCode);
-		System.out.println(sCode);
+		
 		return sCode;
 	}
 	@Override

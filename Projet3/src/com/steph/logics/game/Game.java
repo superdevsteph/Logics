@@ -5,7 +5,7 @@ import com.steph.logics.mode.Mode;
 public abstract class Game {
 
 	protected Mode mode;
-	protected final static  int NB_DE_TOURS = 10;
+	protected final static  int NB_DE_TOURS = 30;
 	protected static int Essais;
 	protected static boolean success;
 	public static String sCode;
