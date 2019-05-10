@@ -5,13 +5,13 @@ import com.steph.logics.mode.Mode;
 public abstract class Game {
 
 	protected Mode mode;
-	protected final static  int NB_DE_TOURS = 30;
+	protected final static int NB_DE_TOURS = 10;
 	protected static int Essais;
 	protected static boolean success;
 	public static String sCode;
 	public static String answer;
 	public static char[] result;
-	
+
 	public abstract char[] compare();
 
 	public Game(Mode mode) {
@@ -29,22 +29,40 @@ public abstract class Game {
 		do {
 
 			Essais++;
-			
+
 			System.out.printf("\nEssai N° : %d/%d \n", Essais, NB_DE_TOURS);
 
 			answer = mode.getAnswer();
 
 			if (answer.equals(sCode) && (Essais == 1)) {
 
-				System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
-				success = true;
-				break;
+				switch (mode.toString()) {
 
+				case "Attack":
+
+					System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
+					success = true;
+					break;
+				default:
+					System.out.println("L'ordianteur a trouvé la combinaison secrète du premier coup!!");
+					success = true;
+					break;
+				}
 			} else if (answer.equals(sCode) && (Essais > 1)) {
-				System.out.println(
-						"Félicitations, vous avez trouvé la combinaison secrète en " + "" + Essais + " essais!!");
-				success = true;
-				break;
+
+				switch (mode.toString()) {
+
+				case "Attack":
+
+					System.out.println(
+							"Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
+					success = true;
+					break;
+				default:
+					System.out.println("L'ordianteur a trouvé la combinaison secrète en " + Essais + " essais!!");
+					success = true;
+					break;
+				}
 
 			} else {
 
@@ -54,8 +72,22 @@ public abstract class Game {
 		} while (success == false && Essais < NB_DE_TOURS);
 
 		if (Essais == NB_DE_TOURS) {
-			System.out.println(
-					"Désolée ! Vous n'avez pas trouvé la combinaison secrète dans le nombre d'essais imparti :(");
+			
+			switch (mode.toString()) {
+
+			case "Attack":
+
+				System.out.println(
+						"Désolée ! Vous n'avez pas trouvé la combinaison secrète dans le nombre d'essais imparti :(");
+				success = true;
+				break;
+			default:
+				System.out.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
+				success = true;
+				break;
+			}
+
+			
 		}
 
 	}
