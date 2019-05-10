@@ -110,7 +110,7 @@ public abstract class Game {
 			case "Attack":
 
 				System.out.println(
-						"Désolée ! Vous n'avez pas trouvé la combinaison secrète dans le nombre d'essais imparti :(");
+						"Vous avez perdu ! La solution était " + sCode + ".");
 				success = true;
 				break;
 			default:
