@@ -97,7 +97,7 @@ public abstract class Game {
 
 		} while (success == false && Essais < NB_DE_TOURS);
 
-		if (Essais == NB_DE_TOURS) {
+		if (Essais == NB_DE_TOURS && success == false) {
 
 			switch (mode.toString()) {
 			
