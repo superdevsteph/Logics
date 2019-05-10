@@ -37,20 +37,46 @@ public abstract class Game {
 			if (answer.equals(sCode) && (Essais == 1)) {
 
 				switch (mode.toString()) {
-
+				
+				case "Dual" : 
+					
+					if (Essais == 1) {
+						System.out.println("Félicitations, vous avez gagné du premier coup!!");
+						success = true;
+						break;	
+					}else if (Essais == 2) {
+						System.out.println("L'ordinateur gagné du premier coup!!");
+						success = true;
+					}
+		
 				case "Attack":
 
 					System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordianteur a trouvé la combinaison secrète du premier coup!!");
+					System.out.println("L'ordinateur a trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				}
 			} else if (answer.equals(sCode) && (Essais > 1)) {
 
 				switch (mode.toString()) {
+				
+				
+				case "Dual" : 
+					
+					if (Essais % 2 == 1) {
+						System.out.println(
+								"Félicitations, vous avez gagné en " + Essais + " essais!!");
+						success = true;
+						break;
+					} else {
+						
+						System.out.println("L'ordinateur a gagné en " + Essais + " essais!!");
+						success = true;
+						break;
+					}
 
 				case "Attack":
 
@@ -72,8 +98,14 @@ public abstract class Game {
 		} while (success == false && Essais < NB_DE_TOURS);
 
 		if (Essais == NB_DE_TOURS) {
-			
+
 			switch (mode.toString()) {
+			
+			case "Dual": 
+				System.out.println(
+						"Personne n'a gagné !!");
+				success = true;
+				break;
 
 			case "Attack":
 
@@ -82,12 +114,12 @@ public abstract class Game {
 				success = true;
 				break;
 			default:
-				System.out.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
+				System.out
+						.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
 				success = true;
 				break;
 			}
 
-			
 		}
 
 	}
