@@ -141,13 +141,14 @@ public class Mastermind extends Game {
 		} else {
 			System.out.println(bienPlacé + " bien placés");
 		}
-
+	//	result[1] = (char) bienPlacé;
 		if (malPlacé <= 1) {
 			System.out.println(malPlacé + " mal placé");
 
 		} else {
 			System.out.println(malPlacé + " mal placés");
 		}
+	//	result[3] = (char) malPlacé;
 		return result;
 	}
 }

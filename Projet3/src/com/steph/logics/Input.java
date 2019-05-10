@@ -3,12 +3,11 @@ package com.steph.logics;
 
 import java.util.Scanner;
 
-import com.steph.logics.game.GameType;
 import com.steph.logics.mode.ModeType;
 
 public class Input {
 
-	private static int numJeu;
+	
 	static Scanner sc = new Scanner(System.in);
 
 	/**
@@ -28,25 +27,6 @@ public class Input {
 		return replayAnswer == 'o';
 	}
 
-	public static GameType getGameType() {
-		int numJeu = 0;
-		do {
-			System.out.println("Veuillez choisir le Jeu : 1 - Recherche +/-, 2 - Mastermind");
-			try {
-				numJeu = sc.nextInt();
-			} catch (Exception e) {
-				System.err.println("Erreur de saisie");
-			}
-		} while (numJeu < 1 || numJeu > 2);
-
-		return GameType.values()[numJeu - 1];
-	}
-	
-	public static int getNumJeu() {
-		System.out.println(numJeu);
-		return numJeu;
-	}
-	
 	
 
 	/**

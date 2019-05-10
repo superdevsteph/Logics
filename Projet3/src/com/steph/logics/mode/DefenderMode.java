@@ -27,17 +27,19 @@ public class DefenderMode extends Mode {
 
 	@Override
 	public String getAnswer() {
-
-		char[] prop = Utils.generateProp();
+	
+		
 		String answer = "";
+		char[] randNum = Utils.generate();
 		if (Game.getTurn() == 1) {
 
-			int a = 1000 + (int) (Math.random() * ((10000 - 1000) + 1));
-			answer = String.valueOf(a);
+	
+			answer = String.valueOf(randNum);
 
 		} else {
-
-			char[] proposition = Utils.getProposition(answer);
+		
+		char[] proposition = Utils.getProposition(answer);
+			
 
 			for (int i = 0; i < proposition.length; i++) {
 
@@ -49,22 +51,14 @@ public class DefenderMode extends Mode {
 				case '+':
 					proposition[i] ++;
 					break;
-				case '.':
-					proposition[i] = prop[i];
-					break;
-				case 'x':
-					proposition[i] = prop[i];
-					break;
 				default:
 					proposition[i] = proposition[i];
 				}
-
+			}
+			answer = new String(proposition);
 			}
 
-			answer = new String(proposition);
-		
-		}
-		System.out.println(answer);
+
 		return answer;
 	}
 }

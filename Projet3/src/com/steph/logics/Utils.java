@@ -1,6 +1,7 @@
 package com.steph.logics;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import com.steph.logics.game.Game;
 
@@ -19,7 +20,7 @@ public class Utils {
 
 	}
 
-	public static  char[] getResponse(String sCode) {
+	public static char[] getResponse(String sCode) {
 
 		sCode = Game.sCode;
 
@@ -32,25 +33,26 @@ public class Utils {
 
 	}
 
-	public static char[] generateProp() {
+	public static char[] generate() {
 
-		ArrayList<String> answerTab = new ArrayList<>();
-		String answer = "";
-		char[] prop = new char[4];
-		do {
-			int a = 1000 + (int) (Math.random() * ((10000 - 1000) + 1));
-			answer = String.valueOf(a);
-		} while (answerTab.contains(answer));
+		char[] posTab = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+		char randNum[] = new char[4];
+		int index;
+		ArrayList<Integer> indexesAlreadyTaken = new ArrayList<>();
 
-		answerTab.add(answer);
-		
-		for (int i = 0; i < answer.length(); i++) {
-			prop[i] = answer.charAt(i);
+		for (int i = 0; i < randNum.length; i++) {
+			do {
+				Random random = new Random();
+				index = random.nextInt(posTab.length);
+			} while (indexesAlreadyTaken.contains(index));
 
+			indexesAlreadyTaken.add(index);
+
+			randNum[i] = posTab[index];
+
+		}
+
+		return randNum;
 	}
-		return prop;
-	}
-
-
 
 }

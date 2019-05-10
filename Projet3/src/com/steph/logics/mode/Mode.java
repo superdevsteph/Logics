@@ -17,6 +17,7 @@ public abstract class Mode {
 	public abstract String getSCode();
 
 	public abstract String getAnswer();
+	
 
 	
 
