@@ -30,7 +30,7 @@ public abstract class Game {
 
 			Essais++;
 
-			System.out.printf("\nEssai NÂ° : %d/%d \n", Essais, NB_DE_TOURS);
+			System.out.printf("\nEssai N° : %d/%d \n", Essais, NB_DE_TOURS);
 
 			answer = mode.getAnswer();
 
@@ -41,21 +41,21 @@ public abstract class Game {
 				case "Dual" : 
 					
 					if (Essais == 1) {
-						System.out.println("FÃ©licitations, vous avez gagnÃ© du premier coup!!");
+						System.out.println("Félicitations, vous avez gagné du premier coup!!");
 						success = true;
 						break;	
 					}else if (Essais == 2) {
-						System.out.println("L'ordinateur gagnÃ© du premier coup!!");
+						System.out.println("L'ordinateur gagné du premier coup!!");
 						success = true;
 					}
 		
 				case "Attack":
 
-					System.out.println("FÃ©licitations, vous avez trouvÃ© la combinaison secrÃ¨te du premier coup!!");
+					System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordinateur a trouvÃ© la combinaison secrÃ¨te du premier coup!!");
+					System.out.println("L'ordinateur a trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				}
@@ -68,12 +68,12 @@ public abstract class Game {
 					
 					if (Essais % 2 == 1) {
 						System.out.println(
-								"FÃ©licitations, vous avez gagnÃ© en " + Essais + " essais!!");
+								"Félicitations, vous avez gagné en " + Essais + " essais!!");
 						success = true;
 						break;
 					} else {
 						
-						System.out.println("L'ordinateur a gagnÃ© en " + Essais + " essais!!");
+						System.out.println("L'ordinateur a gagné en " + Essais + " essais!!");
 						success = true;
 						break;
 					}
@@ -81,11 +81,11 @@ public abstract class Game {
 				case "Attack":
 
 					System.out.println(
-							"FÃ©licitations, vous avez trouvÃ© la combinaison secrÃ¨te en " + Essais + " essais!!");
+							"Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordianteur a trouvÃ© la combinaison secrÃ¨te en " + Essais + " essais!!");
+					System.out.println("L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!");
 					success = true;
 					break;
 				}
@@ -103,19 +103,19 @@ public abstract class Game {
 			
 			case "Dual": 
 				System.out.println(
-						"Personne n'a gagnÃ© !!");
+						"Personne n'a gagné !!");
 				success = true;
 				break;
 
 			case "Attack":
 
 				System.out.println(
-						"Vous avez perdu ! La solution Ã©tait " + sCode + ".");
+						"Vous avez perdu ! La solution était " + sCode + ".");
 				success = true;
 				break;
 			default:
 				System.out
-						.println("L'ordianteur n'a pas trouvÃ© la combinaison secrÃ¨te dans le nombre d'essais imparti.");
+						.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
 				success = true;
 				break;
 			}
