@@ -11,7 +11,7 @@ public class Input {
 	static Scanner sc = new Scanner(System.in);
 
 	/**
-	 * A la fin del a partie, on demande à l'utilisateur s'il veut rejouer
+	 * A la fin de la partie, on demande à l'utilisateur s'il veut rejouer
 	 * 
 	 * @return the replayAnswer
 	 */

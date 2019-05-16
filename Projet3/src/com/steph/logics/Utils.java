@@ -11,7 +11,7 @@ public class Utils {
 
 		answer = Game.answer;
 
-		char[] proposition = new char[4];
+		char[] proposition = new char[Driver.getCodeSize()];
 
 		for (int i = 0; i < answer.length(); i++) {
 			proposition[i] = answer.charAt(i);
@@ -24,7 +24,7 @@ public class Utils {
 
 		sCode = Game.sCode;
 
-		char[] response = new char[4];
+		char[] response = new char[Driver.getCodeSize()];
 
 		for (int i = 0; i < sCode.length(); i++) {
 			response[i] = sCode.charAt(i);
@@ -36,7 +36,7 @@ public class Utils {
 	public static char[] generate() {
 
 		char[] posTab = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-		char randNum[] = new char[4];
+		char randNum[] = new char[Driver.getCodeSize()];
 		int index;
 		ArrayList<Integer> indexesAlreadyTaken = new ArrayList<>();
 

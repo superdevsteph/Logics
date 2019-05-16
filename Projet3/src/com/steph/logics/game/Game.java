@@ -1,11 +1,13 @@
 package com.steph.logics.game;
 
+import com.steph.logics.Driver;
+import com.steph.logics.ReadPropert;
 import com.steph.logics.mode.Mode;
 
 public abstract class Game {
 
 	protected Mode mode;
-	protected final static int NB_DE_TOURS = 10;
+	final static int NB_DE_TOURS = Driver.getNbDeTours();
 	protected static int Essais;
 	protected static boolean success;
 	public static String sCode;
@@ -19,61 +21,62 @@ public abstract class Game {
 	}
 
 	public void play() {
+		String devMode = Driver.getDevMode();
 		success = false;
 		System.out.println("On attaque le jeu en mode " + mode);
 
 		sCode = mode.getSCode();
-
+		if (devMode.equals("ON")) {
+			System.out.println("Mode dÃ©veloppeur activÃ© : " + sCode);
+		}
 		Essais = 0;
 
 		do {
 
 			Essais++;
 
-			System.out.printf("\nEssai N° : %d/%d \n", Essais, NB_DE_TOURS);
+			System.out.printf("\nEssai NÂ° : %d/%d \n", Essais, NB_DE_TOURS);
 
 			answer = mode.getAnswer();
 
 			if (answer.equals(sCode) && (Essais == 1)) {
 
 				switch (mode.toString()) {
-				
-				case "Dual" : 
-					
+
+				case "Dual":
+
 					if (Essais == 1) {
-						System.out.println("Félicitations, vous avez gagné du premier coup!!");
+						System.out.println("FÃ©licitations, vous avez gagnÃ© du premier coup!!");
 						success = true;
-						break;	
-					}else if (Essais == 2) {
-						System.out.println("L'ordinateur gagné du premier coup!!");
+						break;
+					} else if (Essais == 2) {
+						System.out.println("L'ordinateur gagnÃ© du premier coup!!");
 						success = true;
 					}
-		
+
 				case "Attack":
 
-					System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
+					System.out.println("FÃ©licitations, vous avez trouvÃ© la combinaison secrÃ¨te du premier coup!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordinateur a trouvé la combinaison secrète du premier coup!!");
+					System.out.println("L'ordinateur a trouvÃ© la combinaison secrÃ¨te du premier coup!!");
 					success = true;
 					break;
 				}
 			} else if (answer.equals(sCode) && (Essais > 1)) {
 
 				switch (mode.toString()) {
-				
-				
-				case "Dual" : 
-					
+
+				case "Dual":
+
 					if (Essais % 2 == 1) {
-						System.out.println(
-								"Félicitations, vous avez gagné en " + Essais + " essais!!");
+						System.out.println("FÃ©licitations, vous avez gagnÃ© en " + Essais + " essais!!");
 						success = true;
 						break;
 					} else {
-						
-						System.out.println("L'ordinateur a gagné en " + Essais + " essais!!");
+
+						System.out.println("L'ordinateur a gagnÃ© en " + Essais + " essais!!");
 						success = true;
 						break;
 					}
@@ -81,11 +84,11 @@ public abstract class Game {
 				case "Attack":
 
 					System.out.println(
-							"Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
+							"FÃ©licitations, vous avez trouvÃ© la combinaison secrÃ¨te en " + Essais + " essais!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!");
+					System.out.println("L'ordinateur a trouvÃ© la combinaison secrÃ¨te en " + Essais + " essais!!");
 					success = true;
 					break;
 				}
@@ -100,22 +103,20 @@ public abstract class Game {
 		if (Essais == NB_DE_TOURS && success == false) {
 
 			switch (mode.toString()) {
-			
-			case "Dual": 
-				System.out.println(
-						"Personne n'a gagné !!");
+
+			case "Dual":
+				System.out.println("Personne n'a gagnÃ© !!");
 				success = true;
 				break;
 
 			case "Attack":
 
-				System.out.println(
-						"Vous avez perdu ! La solution était " + sCode + ".");
+				System.out.println("Vous avez perdu ! La solution Ã©tait " + sCode + ".");
 				success = true;
 				break;
 			default:
 				System.out
-						.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
+						.println("L'ordianteur n'a pas trouvÃ© la combinaison secrÃ¨te dans le nombre d'essais imparti.");
 				success = true;
 				break;
 			}

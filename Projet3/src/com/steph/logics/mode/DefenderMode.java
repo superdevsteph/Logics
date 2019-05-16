@@ -27,37 +27,33 @@ public class DefenderMode extends Mode {
 
 	@Override
 	public String getAnswer() {
-	
-		
+
 		String answer = "";
 		char[] randNum = Utils.generate();
 		if (Game.getTurn() == 1) {
 
-	
 			answer = String.valueOf(randNum);
 
 		} else {
-		
-		char[] proposition = Utils.getProposition(answer);
-			
+
+			char[] proposition = Utils.getProposition(answer);
 
 			for (int i = 0; i < proposition.length; i++) {
 
 				switch (Game.result[i]) {
 
 				case '-':
-					proposition[i] --;
+					proposition[i]--;
 					break;
 				case '+':
-					proposition[i] ++;
+					proposition[i]++;
 					break;
 				default:
 					proposition[i] = proposition[i];
 				}
 			}
 			answer = new String(proposition);
-			}
-
+		}
 
 		return answer;
 	}

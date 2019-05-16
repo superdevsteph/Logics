@@ -1,2 +1,0 @@
-# LogicGames
-Jeux de logique
