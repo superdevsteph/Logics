@@ -1,7 +1,6 @@
 package com.steph.logics.game;
 
 import com.steph.logics.Driver;
-import com.steph.logics.ReadPropert;
 import com.steph.logics.mode.Mode;
 
 public abstract class Game {
