@@ -1,7 +1,7 @@
 package com.steph.logics;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.xml.DOMConfigurator;
 
 public class App {
 
@@ -19,8 +19,8 @@ public class App {
     */
    public static void main(String[] args){
 	   
-	   PropertyConfigurator.configure(
-		          App.class.getClassLoader().getResource("log4j.properties"));
+	   DOMConfigurator.configure(
+		          App.class.getClassLoader().getResource("log4j.xml"));
 
       logger.info("Hello World!");
       try {
