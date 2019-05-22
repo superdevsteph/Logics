@@ -2,6 +2,7 @@ package com.steph.logics.mode;
 
 import java.util.Scanner;
 
+import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 import com.steph.logics.game.Game;
 
@@ -26,7 +27,7 @@ public class DualMode extends Mode {
 		int turn = Game.getTurn();
 		if (turn %2 == 1)  {
 
-			System.out.println("entrez votre proposition");
+			System.out.println("entrez votre proposition à "+ PropertyLoader.getCodeSize()+ " chiffres.");
 			sc.hasNextLine();
 			answer = sc.nextLine();
 

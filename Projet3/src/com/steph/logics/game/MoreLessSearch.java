@@ -1,7 +1,7 @@
 
 package com.steph.logics.game;
 
-import com.steph.logics.Driver;
+import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 import com.steph.logics.mode.Mode;
 
@@ -12,8 +12,8 @@ public class MoreLessSearch extends Game {
 	}
 
 	public char[] compare() {
-
-		char[] result = new char[Driver.getCodeSize()];
+	
+		char[] result = new char[PropertyLoader.getCodeSize()];
 		char[] proposition = Utils.getProposition(answer);
 		char[] response = Utils.getResponse(sCode);
 

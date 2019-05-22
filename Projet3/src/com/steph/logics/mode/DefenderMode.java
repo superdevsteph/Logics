@@ -2,6 +2,7 @@ package com.steph.logics.mode;
 
 import java.util.Scanner;
 
+import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 import com.steph.logics.game.Game;
 
@@ -16,7 +17,7 @@ public class DefenderMode extends Mode {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Entrez votre code secret");
+		System.out.println("Entrez votre code secret à "+ PropertyLoader.getCodeSize()+ " chiffres.");
 		try {
 			sCode = sc.nextLine();
 		} catch (Exception e) {

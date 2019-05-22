@@ -6,12 +6,13 @@ import java.util.Random;
 import com.steph.logics.game.Game;
 
 public class Utils {
-
+	
+	protected static int codeSize = PropertyLoader.getCodeSize();
 	public static char[] getProposition(String answer) {
-
+		
 		answer = Game.answer;
 
-		char[] proposition = new char[Driver.getCodeSize()];
+		char[] proposition = new char[codeSize];
 
 		for (int i = 0; i < answer.length(); i++) {
 			proposition[i] = answer.charAt(i);
@@ -24,7 +25,7 @@ public class Utils {
 
 		sCode = Game.sCode;
 
-		char[] response = new char[Driver.getCodeSize()];
+		char[] response = new char[codeSize];
 
 		for (int i = 0; i < sCode.length(); i++) {
 			response[i] = sCode.charAt(i);
@@ -34,9 +35,9 @@ public class Utils {
 	}
 
 	public static char[] generate() {
-
+		
 		char[] posTab = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-		char randNum[] = new char[Driver.getCodeSize()];
+		char randNum[] = new char[codeSize];
 		int index;
 		ArrayList<Integer> indexesAlreadyTaken = new ArrayList<>();
 

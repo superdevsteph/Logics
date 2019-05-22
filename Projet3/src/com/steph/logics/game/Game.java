@@ -1,12 +1,12 @@
 package com.steph.logics.game;
 
-import com.steph.logics.Driver;
+import com.steph.logics.PropertyLoader;
 import com.steph.logics.mode.Mode;
 
 public abstract class Game {
 
 	protected Mode mode;
-	final static int NB_DE_TOURS = Driver.getNbDeTours();
+	protected static int NB_DE_TOURS;
 	protected static int Essais;
 	protected static boolean success;
 	public static String sCode;
@@ -20,18 +20,18 @@ public abstract class Game {
 	}
 
 	public void play() {
-		String devMode = Driver.getDevMode();
+		
 		success = false;
 		System.out.println("On attaque le jeu en mode " + mode);
 
 		sCode = mode.getSCode();
-		if (devMode.equals("ON")) {
-			System.out.println("Mode développeur activé : " + sCode);
-		}
+		
 		Essais = 0;
+		
+		
 
 		do {
-
+			NB_DE_TOURS = PropertyLoader.getNbDeTours();
 			Essais++;
 
 			System.out.printf("\nEssai N° : %d/%d \n", Essais, NB_DE_TOURS);
