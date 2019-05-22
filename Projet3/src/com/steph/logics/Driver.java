@@ -13,6 +13,7 @@ import com.steph.logics.mode.ModeType;
 public class Driver {
 	 private static Logger logger = Logger.getLogger(Driver.class);
 	public static void main(String[] args) {
+		logger.log(Level.INFO, "Start");
 	
 			try{
 				
@@ -26,17 +27,7 @@ public class Driver {
 		DOMConfigurator.configure(
 		          Driver.class.getClassLoader().getResource("log4j.xml"));
 
-    logger.log(Level.INFO, "Start");
    
-    try {
-  	    // équivaut à logger.info("Message d'information");
-  	    logger.log(Level.INFO, "Stop");
-  		// Code pouvant soulever une Exception
-  		//...
-  	} catch(Exception e) {
-  	    // équivaut à logger.log(Level.FATAL, "Une exception est survenue", e);
-  	    logger.fatal("Une exception est survenue", e);
-  	}
 		do {
 
 			ModeType modeType = Input.getModeType();
@@ -45,9 +36,13 @@ public class Driver {
 			game.play();
 
 		} while (Input.replay());
-
-		System.out.println("Bye bye !!!");
 		
+		try {
+		logger.log(Level.INFO, "Bye bye !!!");
+		} catch(Exception e) {
+	
+			logger.fatal("Une exception est survenue", e);
+		}
 		
 
 }

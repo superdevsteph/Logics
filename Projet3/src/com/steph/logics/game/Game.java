@@ -1,5 +1,9 @@
 package com.steph.logics.game;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
+import com.steph.logics.Driver;
 import com.steph.logics.PropertyLoader;
 import com.steph.logics.mode.Mode;
 
@@ -12,7 +16,7 @@ public abstract class Game {
 	public static String sCode;
 	public static String answer;
 	public static char[] result;
-
+	private static Logger logger = Logger.getLogger(Driver.class);
 	public abstract char[] compare();
 
 	public Game(Mode mode) {
@@ -22,7 +26,7 @@ public abstract class Game {
 	public void play() {
 		
 		success = false;
-		System.out.println("On attaque le jeu en mode " + mode);
+		logger.log(Level.INFO, "On attaque le jeu en mode " + mode);
 
 		sCode = mode.getSCode();
 		
@@ -33,8 +37,8 @@ public abstract class Game {
 		do {
 			NB_DE_TOURS = PropertyLoader.getNbDeTours();
 			Essais++;
-
-			System.out.printf("\nEssai N° : %d/%d \n", Essais, NB_DE_TOURS);
+			logger.log(Level.INFO, "Essai " + Essais+"/" + NB_DE_TOURS);
+			
 
 			answer = mode.getAnswer();
 
@@ -45,21 +49,21 @@ public abstract class Game {
 				case "Dual":
 
 					if (Essais == 1) {
-						System.out.println("Félicitations, vous avez gagné du premier coup!!");
+						logger.log(Level.INFO, "Félicitations, vous avez gagné du premier coup!!");
 						success = true;
 						break;
 					} else if (Essais == 2) {
-						System.out.println("L'ordinateur gagné du premier coup!!");
+						logger.log(Level.INFO, "L'ordinateur gagné du premier coup!!");
 						success = true;
 					}
 
 				case "Attack":
 
-					System.out.println("Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
+					logger.log(Level.INFO, "Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordinateur a trouvé la combinaison secrète du premier coup!!");
+					logger.log(Level.INFO, "L'ordinateur a trouvé la combinaison secrète du premier coup!!");
 					success = true;
 					break;
 				}
@@ -70,24 +74,23 @@ public abstract class Game {
 				case "Dual":
 
 					if (Essais % 2 == 1) {
-						System.out.println("Félicitations, vous avez gagné en " + Essais + " essais!!");
+						logger.log(Level.INFO, "Félicitations, vous avez gagné en " + Essais + " essais!!");
 						success = true;
 						break;
 					} else {
 
-						System.out.println("L'ordinateur a gagné en " + Essais + " essais!!");
+						logger.log(Level.INFO, "L'ordinateur a gagné en " + Essais + " essais!!");
 						success = true;
 						break;
 					}
 
 				case "Attack":
 
-					System.out.println(
-							"Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
+					logger.log(Level.INFO, "Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
 					success = true;
 					break;
 				default:
-					System.out.println("L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!");
+					logger.log(Level.INFO, "L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!");
 					success = true;
 					break;
 				}
@@ -104,18 +107,17 @@ public abstract class Game {
 			switch (mode.toString()) {
 
 			case "Dual":
-				System.out.println("Personne n'a gagné !!");
+				logger.log(Level.INFO, "Personne n'a gagné !!");
 				success = true;
 				break;
 
 			case "Attack":
 
-				System.out.println("Vous avez perdu ! La solution était " + sCode + ".");
+				logger.log(Level.INFO, "Vous avez perdu ! La solution était " + sCode + ".");
 				success = true;
 				break;
 			default:
-				System.out
-						.println("L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
+				logger.log(Level.INFO, "L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
 				success = true;
 				break;
 			}

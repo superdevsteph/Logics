@@ -2,11 +2,17 @@ package com.steph.logics.mode;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
+import com.steph.logics.Driver;
 import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 import com.steph.logics.game.Game;
 
 public class DefenderMode extends Mode {
+	
+	 private static Logger logger = Logger.getLogger(Driver.class);
 
 	public DefenderMode() {
 		super("Defender");
@@ -17,7 +23,7 @@ public class DefenderMode extends Mode {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Entrez votre code secret à "+ PropertyLoader.getCodeSize()+ " chiffres.");
+		logger.log(Level.INFO, "Entrez votre code secret à "+ PropertyLoader.getCodeSize()+ " chiffres.");
 		try {
 			sCode = sc.nextLine();
 		} catch (Exception e) {

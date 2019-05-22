@@ -2,11 +2,18 @@ package com.steph.logics.mode;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
+import com.steph.logics.Driver;
 import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 import com.steph.logics.game.Game;
 
 public class DualMode extends Mode {
+	
+	 private static Logger logger = Logger.getLogger(Driver.class);
+	
 	private static String answer;
 	public DualMode() {
 		super("Dual");
@@ -27,7 +34,7 @@ public class DualMode extends Mode {
 		int turn = Game.getTurn();
 		if (turn %2 == 1)  {
 
-			System.out.println("entrez votre proposition à "+ PropertyLoader.getCodeSize()+ " chiffres.");
+			logger.log(Level.INFO, "entrez votre proposition à "+ PropertyLoader.getCodeSize()+ " chiffres.");
 			sc.hasNextLine();
 			answer = sc.nextLine();
 

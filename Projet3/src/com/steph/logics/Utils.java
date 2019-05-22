@@ -3,6 +3,8 @@ package com.steph.logics;
 import java.util.ArrayList;
 import java.util.Random;
 
+import org.apache.log4j.Logger;
+
 import com.steph.logics.game.Game;
 
 public class Utils {
