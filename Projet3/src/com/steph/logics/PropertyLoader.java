@@ -25,7 +25,7 @@ public class PropertyLoader {
 			NB_DE_TOURS = Integer.parseInt(prop.getProperty("NB_DE_TOURS"));
 
 			codeSize = Integer.parseInt(prop.getProperty("codeSize"));
-			
+
 			devMode = prop.getProperty("devMode");
 
 		} finally {
@@ -42,6 +42,7 @@ public class PropertyLoader {
 	public static int getCodeSize() {
 		return codeSize;
 	}
+
 	public static String getDevMode() {
 		return devMode;
 	}

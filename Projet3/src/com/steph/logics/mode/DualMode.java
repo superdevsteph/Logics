@@ -33,7 +33,7 @@ public class DualMode extends Mode {
 	public String getAnswer() {
 		Scanner sc = new Scanner(System.in);
 		int turn = Game.getTurn();
-		if (turn % 2 == 1) {
+		if (turn % 2 == 1){
 			try {
 				logger.log(Level.INFO,
 						"entrez votre proposition à " + PropertyLoader.getCodeSize() + " chiffres : " + newLine);
