@@ -10,8 +10,8 @@ import com.steph.logics.PropertyLoader;
 import com.steph.logics.Utils;
 
 public class AttackMode extends Mode {
-	
-	 private static Logger logger = Logger.getLogger(Driver.class);
+	static String newLine = System.getProperty("line.separator");
+	private static Logger logger = Logger.getLogger(Driver.class);
 
 	private static String answer;
 
@@ -24,21 +24,31 @@ public class AttackMode extends Mode {
 		char secretCode[] = Utils.generate();
 		String sCode = String.valueOf(secretCode);
 
-
 		return sCode;
 	}
 
 	@Override
 	public String getAnswer() {
-		
+
 		Scanner sc = new Scanner(System.in);
-		logger.log(Level.INFO, "entrez votre proposition à "+ PropertyLoader.getCodeSize()+ " chiffres.");
+		try {
+			logger.log(Level.INFO,
+					"entrez votre proposition Ã  " + PropertyLoader.getCodeSize() + " chiffres : " + newLine);
+		} catch (Exception e) {
+
+			logger.fatal("Une exception est survenue", e);
+		}
 		sc.hasNextLine();
 		answer = sc.nextLine();
+		try {
+			logger.log(Level.DEBUG,
+					"Votre proposition : " + answer + newLine);
+		} catch (Exception e) {
+
+			logger.fatal("Une exception est survenue", e);
+		}
 		return answer;
 
 	}
-
-
 
 }

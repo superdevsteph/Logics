@@ -11,6 +11,7 @@ import com.steph.logics.Utils;
 import com.steph.logics.game.Game;
 
 public class DefenderMode extends Mode {
+	static	String newLine = System.getProperty("line.separator");
 	
 	 private static Logger logger = Logger.getLogger(Driver.class);
 
@@ -22,8 +23,12 @@ public class DefenderMode extends Mode {
 		String sCode = "";
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
-
-		logger.log(Level.INFO, "Entrez votre code secret à "+ PropertyLoader.getCodeSize()+ " chiffres.");
+try {
+		logger.log(Level.INFO, "Entrez votre code secret Ã  "+ PropertyLoader.getCodeSize()+ " chiffres : "+newLine);
+} catch(Exception e) {
+	
+	logger.fatal("Une exception est survenue", e);
+}
 		try {
 			sCode = sc.nextLine();
 		} catch (Exception e) {
@@ -61,7 +66,13 @@ public class DefenderMode extends Mode {
 			}
 			answer = new String(proposition);
 		}
+		try {
+			logger.log(Level.DEBUG,
+					"Proposition de l'ordinateur : " + answer + newLine);
+		} catch (Exception e) {
 
+			logger.fatal("Une exception est survenue", e);
+		}
 		return answer;
 	}
 }

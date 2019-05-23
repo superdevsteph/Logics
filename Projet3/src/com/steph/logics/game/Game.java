@@ -8,7 +8,7 @@ import com.steph.logics.PropertyLoader;
 import com.steph.logics.mode.Mode;
 
 public abstract class Game {
-
+	static String newLine = System.getProperty("line.separator");
 	protected Mode mode;
 	protected static int NB_DE_TOURS;
 	protected static int Essais;
@@ -17,6 +17,7 @@ public abstract class Game {
 	public static String answer;
 	public static char[] result;
 	private static Logger logger = Logger.getLogger(Driver.class);
+
 	public abstract char[] compare();
 
 	public Game(Mode mode) {
@@ -24,22 +25,31 @@ public abstract class Game {
 	}
 
 	public void play() {
-		
+		 String devMode = PropertyLoader.getDevMode();
 		success = false;
-		logger.log(Level.INFO, "On attaque le jeu en mode " + mode);
+		logger.log(Level.INFO, "On attaque le jeu en mode " + mode + newLine);
 
 		sCode = mode.getSCode();
-		
+		if (devMode.equals("ON")) {
+			try {
+				logger.log(Level.DEBUG, "mode développeur activé - Le code secret est : " + sCode + newLine);
+			} catch (Exception e) {
+
+				logger.fatal("Une exception est survenue", e);
+			}
+		}
+
 		Essais = 0;
-		
-		
 
 		do {
 			NB_DE_TOURS = PropertyLoader.getNbDeTours();
 			Essais++;
-			logger.log(Level.INFO, "Essai " + Essais+"/" + NB_DE_TOURS);
-			
+			try {
+				logger.log(Level.INFO, newLine + "Essai " + Essais + "/" + NB_DE_TOURS + newLine);
+			} catch (Exception e) {
 
+				logger.fatal("Une exception est survenue", e);
+			}
 			answer = mode.getAnswer();
 
 			if (answer.equals(sCode) && (Essais == 1)) {
@@ -49,21 +59,42 @@ public abstract class Game {
 				case "Dual":
 
 					if (Essais == 1) {
-						logger.log(Level.INFO, "Félicitations, vous avez gagné du premier coup!!");
+						try {
+							logger.log(Level.INFO, "Félicitations, vous avez gagné du premier coup!!" + newLine);
+						} catch (Exception e) {
+
+							logger.fatal("Une exception est survenue", e);
+						}
 						success = true;
 						break;
 					} else if (Essais == 2) {
-						logger.log(Level.INFO, "L'ordinateur gagné du premier coup!!");
+						try {
+							logger.log(Level.INFO, "L'ordinateur gagné du premier coup!!" + newLine);
+						} catch (Exception e) {
+
+							logger.fatal("Une exception est survenue", e);
+						}
 						success = true;
 					}
 
 				case "Attack":
+					try {
+						logger.log(Level.INFO,
+								"Félicitations, vous avez trouvé la combinaison secrète du premier coup!!" + newLine);
+					} catch (Exception e) {
 
-					logger.log(Level.INFO, "Félicitations, vous avez trouvé la combinaison secrète du premier coup!!");
+						logger.fatal("Une exception est survenue", e);
+					}
 					success = true;
 					break;
 				default:
-					logger.log(Level.INFO, "L'ordinateur a trouvé la combinaison secrète du premier coup!!");
+					try {
+						logger.log(Level.INFO,
+								"L'ordinateur a trouvé la combinaison secrète du premier coup!!" + newLine);
+					} catch (Exception e) {
+
+						logger.fatal("Une exception est survenue", e);
+					}
 					success = true;
 					break;
 				}
@@ -74,23 +105,44 @@ public abstract class Game {
 				case "Dual":
 
 					if (Essais % 2 == 1) {
-						logger.log(Level.INFO, "Félicitations, vous avez gagné en " + Essais + " essais!!");
+						try {
+							logger.log(Level.INFO,
+									"Félicitations, vous avez gagné en " + Essais + " essais!!" + newLine);
+						} catch (Exception e) {
+
+							logger.fatal("Une exception est survenue", e);
+						}
 						success = true;
 						break;
 					} else {
+						try {
+							logger.log(Level.INFO, "L'ordinateur a gagné en " + Essais + " essais!!" + newLine);
+						} catch (Exception e) {
 
-						logger.log(Level.INFO, "L'ordinateur a gagné en " + Essais + " essais!!");
+							logger.fatal("Une exception est survenue", e);
+						}
 						success = true;
 						break;
 					}
 
 				case "Attack":
+					try {
+						logger.log(Level.INFO, "Félicitations, vous avez trouvé la combinaison secrète en " + Essais
+								+ " essais!!" + newLine);
+					} catch (Exception e) {
 
-					logger.log(Level.INFO, "Félicitations, vous avez trouvé la combinaison secrète en " + Essais + " essais!!");
+						logger.fatal("Une exception est survenue", e);
+					}
 					success = true;
 					break;
 				default:
-					logger.log(Level.INFO, "L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!");
+					try {
+						logger.log(Level.INFO,
+								"L'ordinateur a trouvé la combinaison secrète en " + Essais + " essais!!" + newLine);
+					} catch (Exception e) {
+
+						logger.fatal("Une exception est survenue", e);
+					}
 					success = true;
 					break;
 				}
@@ -107,17 +159,33 @@ public abstract class Game {
 			switch (mode.toString()) {
 
 			case "Dual":
-				logger.log(Level.INFO, "Personne n'a gagné !!");
+				try {
+					logger.log(Level.INFO, "Personne n'a gagné !!" + newLine);
+				} catch (Exception e) {
+
+					logger.fatal("Une exception est survenue", e);
+				}
 				success = true;
 				break;
 
 			case "Attack":
+				try {
+					logger.log(Level.INFO, "Vous avez perdu ! La solution était " + sCode + "." + newLine);
+				} catch (Exception e) {
 
-				logger.log(Level.INFO, "Vous avez perdu ! La solution était " + sCode + ".");
+					logger.fatal("Une exception est survenue", e);
+				}
 				success = true;
 				break;
 			default:
-				logger.log(Level.INFO, "L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti.");
+				try {
+					logger.log(Level.INFO,
+							"L'ordianteur n'a pas trouvé la combinaison secrète dans le nombre d'essais imparti."
+									+ newLine);
+				} catch (Exception e) {
+
+					logger.fatal("Une exception est survenue", e);
+				}
 				success = true;
 				break;
 			}

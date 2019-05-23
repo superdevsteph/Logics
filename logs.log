@@ -1,89 +1,626 @@
-2019-05-22 17:00:45 INFO  Driver:16 - Start
-2019-05-22 17:00:45 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:00:47 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:00:47 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 4/10
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 5/10
-2019-05-22 17:00:48 INFO  Driver:40 - Essai 6/10
-2019-05-22 17:00:48 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 6 essais!!
-2019-05-22 17:00:48 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:00:49 INFO  Driver:46 - Stop
-2019-05-22 17:07:44 INFO  Driver:16 - Start
-2019-05-22 17:07:45 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:07:47 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:07:47 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:07:49 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:07:49 INFO  Driver:27 - -
-2019-05-22 17:07:49 INFO  Driver:30 - +
-2019-05-22 17:07:49 INFO  Driver:30 - +
-2019-05-22 17:07:49 INFO  Driver:27 - -
-2019-05-22 17:07:49 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:07:49 INFO  Driver:27 - -
-2019-05-22 17:07:49 INFO  Driver:33 - =
-2019-05-22 17:07:49 INFO  Driver:30 - +
-2019-05-22 17:07:49 INFO  Driver:33 - =
-2019-05-22 17:07:49 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:07:49 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 3 essais!!
-2019-05-22 17:07:49 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:08:35 INFO  Driver:16 - Start
-2019-05-22 17:08:35 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:08:37 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:08:37 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:08:39 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:08:39 INFO  Driver:38 - [C@58134517
-2019-05-22 17:08:39 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:08:39 INFO  Driver:38 - [C@4450d156
-2019-05-22 17:08:39 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:08:39 INFO  Driver:38 - [C@4461c7e3
-2019-05-22 17:08:39 INFO  Driver:40 - Essai 4/10
-2019-05-22 17:08:39 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 4 essais!!
-2019-05-22 17:08:39 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:17:27 INFO  Driver:16 - Start
-2019-05-22 17:17:27 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:17:30 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:17:30 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:17:32 INFO  Driver:38 - [C@6a472554
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:17:32 INFO  Driver:38 - [C@58134517
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:17:32 INFO  Driver:38 - [C@4450d156
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 4/10
-2019-05-22 17:17:32 INFO  Driver:38 - [C@4461c7e3
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 5/10
-2019-05-22 17:17:32 INFO  Driver:38 - [C@351d0846
-2019-05-22 17:17:32 INFO  Driver:40 - Essai 6/10
-2019-05-22 17:17:32 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 6 essais!!
-2019-05-22 17:17:32 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:18:59 INFO  Driver:16 - Start
-2019-05-22 17:18:59 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:19:02 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:19:02 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:19:07 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:19:07 INFO  Driver:38 - [C@6a472554
-2019-05-22 17:19:07 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:19:07 INFO  Driver:38 - [C@58134517
-2019-05-22 17:19:07 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:19:07 INFO  Driver:38 - [C@4450d156
-2019-05-22 17:19:07 INFO  Driver:40 - Essai 4/10
-2019-05-22 17:19:07 INFO  Driver:38 - [C@4461c7e3
-2019-05-22 17:19:07 INFO  Driver:40 - Essai 5/10
-2019-05-22 17:19:07 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 5 essais!!
-2019-05-22 17:19:07 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:19:27 INFO  Driver:16 - Start
-2019-05-22 17:19:27 INFO  Driver:42 - Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
-2019-05-22 17:19:28 INFO  Driver:29 - On attaque le jeu en mode Defender
-2019-05-22 17:19:28 INFO  Driver:26 - Entrez votre code secret � 4 chiffres.
-2019-05-22 17:19:30 INFO  Driver:40 - Essai 1/10
-2019-05-22 17:19:30 INFO  Driver:38 - [C@58134517
-2019-05-22 17:19:30 INFO  Driver:40 - Essai 2/10
-2019-05-22 17:19:30 INFO  Driver:38 - [C@4450d156
-2019-05-22 17:19:30 INFO  Driver:40 - Essai 3/10
-2019-05-22 17:19:30 INFO  Driver:38 - [C@4461c7e3
-2019-05-22 17:19:30 INFO  Driver:40 - Essai 4/10
-2019-05-22 17:19:30 INFO  Driver:93 - L'ordinateur a trouvé la combinaison secrète en 4 essais!!
-2019-05-22 17:19:30 INFO  Driver:26 - Voulez-vous rejouer ? (O/N)
-2019-05-22 17:19:48 INFO  Driver:41 - Bye bye !!!
+2019-05-23 14:47:31 INFO  Driver:20 : Start
+2019-05-23 14:47:31 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 14:47:35 INFO  Driver:29 : On attaque le jeu en mode Attack
+
+2019-05-23 14:47:35 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 14:47:35 INFO  Driver:36 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 14:47:39 DEBUG Driver:36 : +
+2019-05-23 14:47:39 DEBUG Driver:36 : +
+2019-05-23 14:47:39 DEBUG Driver:28 : -
+2019-05-23 14:47:39 DEBUG Driver:28 : -
+2019-05-23 14:47:39 INFO  Driver:40 : 
+Essai 2/10
+
+2019-05-23 14:47:39 INFO  Driver:36 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 14:50:13 INFO  Driver:20 : Start
+2019-05-23 14:50:13 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 14:51:19 INFO  Driver:20 : Start
+2019-05-23 14:51:27 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 14:51:37 INFO  Driver:29 : On attaque le jeu en mode Defender
+
+2019-05-23 14:51:37 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 14:51:42 DEBUG Driver:28 : -
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 DEBUG Driver:28 : -
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 2/10
+
+2019-05-23 14:51:42 DEBUG Driver:28 : -
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 DEBUG Driver:28 : -
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 3/10
+
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 DEBUG Driver:28 : -
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 4/10
+
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 5/10
+
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 DEBUG Driver:36 : +
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 DEBUG Driver:44 : =
+2019-05-23 14:51:42 INFO  Driver:40 : 
+Essai 6/10
+
+2019-05-23 14:51:42 INFO  Driver:93 : L'ordinateur a trouvé la combinaison secrète en 6 essais!!
+
+2019-05-23 14:51:46 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 14:51:57 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:02:00 INFO  Driver:20 : Start
+2019-05-23 15:02:00 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:02:09 INFO  Driver:29 : On attaque le jeu en mode Attack
+
+2019-05-23 15:02:15 INFO  Driver:20 : Start
+2019-05-23 15:02:24 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:02:35 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:02:51 INFO  Driver:29 : On attaque le jeu en mode Attack
+
+2019-05-23 15:03:04 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 15:03:05 INFO  Driver:36 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:03:15 INFO  Driver:62 : Félicitations, vous avez trouvé la combinaison secrète du premier coup!!
+
+2019-05-23 15:03:17 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:03:24 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:04:53 INFO  Driver:20 : Start
+2019-05-23 15:04:53 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:04:57 INFO  Driver:29 : On attaque le jeu en mode Defender
+
+2019-05-23 15:04:57 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:04:59 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 15:04:59 DEBUG Driver:36 : +
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 INFO  Driver:40 : 
+Essai 2/10
+
+2019-05-23 15:04:59 DEBUG Driver:44 : =
+2019-05-23 15:04:59 DEBUG Driver:44 : =
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 INFO  Driver:40 : 
+Essai 3/10
+
+2019-05-23 15:04:59 DEBUG Driver:44 : =
+2019-05-23 15:04:59 DEBUG Driver:44 : =
+2019-05-23 15:04:59 DEBUG Driver:44 : =
+2019-05-23 15:04:59 DEBUG Driver:28 : -
+2019-05-23 15:04:59 INFO  Driver:40 : 
+Essai 4/10
+
+2019-05-23 15:04:59 INFO  Driver:93 : L'ordinateur a trouvé la combinaison secrète en 4 essais!!
+
+2019-05-23 15:04:59 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:05:01 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:05:02 INFO  Driver:29 : On attaque le jeu en mode Attack
+
+2019-05-23 15:05:20 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 15:05:20 INFO  Driver:36 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:05:31 INFO  Driver:62 : Félicitations, vous avez trouvé la combinaison secrète du premier coup!!
+
+2019-05-23 15:05:34 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:05:43 INFO  Driver:20 : Start
+2019-05-23 15:05:43 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:05:46 INFO  Driver:29 : On attaque le jeu en mode Defender
+
+2019-05-23 15:05:46 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:05:48 INFO  Driver:40 : 
+Essai 1/10
+
+2019-05-23 15:05:48 DEBUG Driver:36 : +
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:28 : -
+2019-05-23 15:05:48 DEBUG Driver:28 : -
+2019-05-23 15:05:48 INFO  Driver:40 : 
+Essai 2/10
+
+2019-05-23 15:05:48 DEBUG Driver:36 : +
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:28 : -
+2019-05-23 15:05:48 INFO  Driver:40 : 
+Essai 3/10
+
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:44 : =
+2019-05-23 15:05:48 DEBUG Driver:28 : -
+2019-05-23 15:05:48 INFO  Driver:40 : 
+Essai 4/10
+
+2019-05-23 15:05:48 INFO  Driver:93 : L'ordinateur a trouvé la combinaison secrète en 4 essais!!
+
+2019-05-23 15:05:48 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:05:53 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:07:51 INFO  Driver:20 : Start
+2019-05-23 15:07:51 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:08:17 INFO  Driver:30 : On attaque le jeu en mode Defender
+
+2019-05-23 15:08:17 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:08:21 INFO  Driver:39 : 
+Essai 1/10
+
+2019-05-23 15:08:21 DEBUG Driver:29 : -
+2019-05-23 15:08:21 DEBUG Driver:37 : +
+2019-05-23 15:08:21 DEBUG Driver:37 : +
+2019-05-23 15:08:21 DEBUG Driver:29 : -
+2019-05-23 15:08:21 INFO  Driver:39 : 
+Essai 2/10
+
+2019-05-23 15:08:21 DEBUG Driver:29 : -
+2019-05-23 15:08:21 DEBUG Driver:45 : =
+2019-05-23 15:08:21 DEBUG Driver:45 : =
+2019-05-23 15:08:21 DEBUG Driver:29 : -
+2019-05-23 15:08:21 INFO  Driver:39 : 
+Essai 3/10
+
+2019-05-23 15:08:21 INFO  Driver:93 : L'ordinateur a trouvé la combinaison secrète en 3 essais!!
+
+2019-05-23 15:08:21 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:08:28 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:24:41 INFO  Driver:20 : Start
+2019-05-23 15:24:41 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:24:44 INFO  Driver:30 : On attaque le jeu en mode Attack
+
+2019-05-23 15:24:44 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:24:44 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:26:36 INFO  Driver:20 : Start
+2019-05-23 15:26:36 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:26:38 INFO  Driver:30 : On attaque le jeu en mode Attack
+
+2019-05-23 15:26:38 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:26:38 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:27:11 DEBUG Driver:37 : +
+2019-05-23 15:27:11 DEBUG Driver:29 : -
+2019-05-23 15:27:11 DEBUG Driver:37 : +
+2019-05-23 15:27:11 DEBUG Driver:29 : -
+2019-05-23 15:27:11 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:27:11 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:27:54 INFO  Driver:20 : Start
+2019-05-23 15:27:54 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:27:56 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:27:56 INFO  Driver:49 : 
+Essai 1/10
+
+2019-05-23 15:27:56 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:29:05 INFO  Driver:20 : Start
+2019-05-23 15:29:05 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:29:25 INFO  Driver:20 : Start
+2019-05-23 15:29:25 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:29:28 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:29:28 INFO  Driver:50 : 
+Essai 1/10
+
+2019-05-23 15:29:28 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:30:02 INFO  Driver:20 : Start
+2019-05-23 15:30:02 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:30:04 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:30:04 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:30:04 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:30:23 INFO  Driver:20 : Start
+2019-05-23 15:30:23 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:30:25 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:30:25 INFO  Driver:49 : 
+Essai 1/10
+
+2019-05-23 15:30:25 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:30:52 INFO  Driver:20 : Start
+2019-05-23 15:30:52 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:30:54 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:30:54 DEBUG Driver:38 : mode développeur activé - Le code secret est :7160
+
+2019-05-23 15:30:54 INFO  Driver:49 : 
+Essai 1/10
+
+2019-05-23 15:30:54 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:31:04 INFO  Driver:20 : Start
+2019-05-23 15:31:04 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:31:06 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:31:06 DEBUG Driver:38 : mode développeur activé - Le code secret est :3186
+
+2019-05-23 15:31:06 INFO  Driver:49 : 
+Essai 1/10
+
+2019-05-23 15:31:06 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:32:16 INFO  Driver:20 : Start
+2019-05-23 15:32:16 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:32:20 INFO  Driver:31 : On attaque le jeu en mode Attack
+
+2019-05-23 15:32:20 DEBUG Driver:36 : mode développeur activé - Le code secret est :1928
+
+2019-05-23 15:32:20 INFO  Driver:49 : 
+Essai 1/10
+
+2019-05-23 15:32:20 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:32:52 INFO  Driver:20 : Start
+2019-05-23 15:32:52 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:32:54 INFO  Driver:30 : On attaque le jeu en mode Attack
+
+2019-05-23 15:32:54 DEBUG Driver:35 : mode développeur activé - Le code secret est :6240
+
+2019-05-23 15:32:54 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:32:54 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:33:00 INFO  Driver:82 : Félicitations, vous avez trouvé la combinaison secrète du premier coup!!
+
+2019-05-23 15:33:00 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:33:14 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:35:54 INFO  Driver:20 : Start
+2019-05-23 15:35:54 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:35:56 INFO  Driver:30 : On attaque le jeu en mode Attack
+
+2019-05-23 15:35:56 DEBUG Driver:35 : mode développeur activé - Le code secret est : 6423
+
+2019-05-23 15:35:56 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:35:56 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:36:01 DEBUG Driver:44 : Votre proposition : 5555
+
+2019-05-23 15:36:01 DEBUG Driver:37 : +
+2019-05-23 15:36:01 DEBUG Driver:29 : -
+2019-05-23 15:36:01 DEBUG Driver:29 : -
+2019-05-23 15:36:01 DEBUG Driver:29 : -
+2019-05-23 15:36:01 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:36:01 INFO  Driver:35 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:36:21 DEBUG Driver:44 : Votre proposition : 6423
+
+2019-05-23 15:36:21 INFO  Driver:130 : Félicitations, vous avez trouvé la combinaison secrète en 2 essais!!
+
+2019-05-23 15:36:21 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:36:24 INFO  Driver:45 : Bye bye !!!
+2019-05-23 15:38:02 INFO  Driver:20 : Start
+2019-05-23 15:38:02 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:38:05 INFO  Driver:30 : On attaque le jeu en mode Defender
+
+2019-05-23 15:38:05 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:38:07 DEBUG Driver:35 : mode développeur activé - Le code secret est : 5555
+
+2019-05-23 15:38:07 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:38:07 DEBUG Driver:70 : Proposition de l'ordinateur : 5936
+
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:29 : -
+2019-05-23 15:38:07 DEBUG Driver:37 : +
+2019-05-23 15:38:07 DEBUG Driver:29 : -
+2019-05-23 15:38:07 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:38:07 DEBUG Driver:70 : Proposition de l'ordinateur : 5845
+
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:29 : -
+2019-05-23 15:38:07 DEBUG Driver:37 : +
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 INFO  Driver:48 : 
+Essai 3/10
+
+2019-05-23 15:38:07 DEBUG Driver:70 : Proposition de l'ordinateur : 5755
+
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:29 : -
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 INFO  Driver:48 : 
+Essai 4/10
+
+2019-05-23 15:38:07 DEBUG Driver:70 : Proposition de l'ordinateur : 5655
+
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:29 : -
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 DEBUG Driver:45 : =
+2019-05-23 15:38:07 INFO  Driver:48 : 
+Essai 5/10
+
+2019-05-23 15:38:07 DEBUG Driver:70 : Proposition de l'ordinateur : 5555
+
+2019-05-23 15:38:07 INFO  Driver:140 : L'ordinateur a trouvé la combinaison secrète en 5 essais!!
+
+2019-05-23 15:38:07 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:39:17 INFO  Driver:20 : Start
+2019-05-23 15:39:17 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:39:20 INFO  Driver:30 : On attaque le jeu en mode Defender
+
+2019-05-23 15:39:20 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:39:22 DEBUG Driver:35 : mode développeur activé - Le code secret est : 5555
+
+2019-05-23 15:39:22 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:39:22 DEBUG Driver:70 : Proposition de l'ordinateur : 8421
+
+2019-05-23 15:39:22 DEBUG Driver:29 : -
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:55 : Résultat : [C@6b53e23f
+
+2019-05-23 15:39:22 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:39:22 DEBUG Driver:70 : Proposition de l'ordinateur : 7532
+
+2019-05-23 15:39:22 DEBUG Driver:29 : -
+2019-05-23 15:39:22 DEBUG Driver:45 : =
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:55 : Résultat : [C@491666ad
+
+2019-05-23 15:39:22 INFO  Driver:48 : 
+Essai 3/10
+
+2019-05-23 15:39:22 DEBUG Driver:70 : Proposition de l'ordinateur : 6543
+
+2019-05-23 15:39:22 DEBUG Driver:29 : -
+2019-05-23 15:39:22 DEBUG Driver:45 : =
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:55 : Résultat : [C@176d53b2
+
+2019-05-23 15:39:22 INFO  Driver:48 : 
+Essai 4/10
+
+2019-05-23 15:39:22 DEBUG Driver:70 : Proposition de l'ordinateur : 5554
+
+2019-05-23 15:39:22 DEBUG Driver:45 : =
+2019-05-23 15:39:22 DEBUG Driver:45 : =
+2019-05-23 15:39:22 DEBUG Driver:45 : =
+2019-05-23 15:39:22 DEBUG Driver:37 : +
+2019-05-23 15:39:22 DEBUG Driver:55 : Résultat : [C@971d0d8
+
+2019-05-23 15:39:22 INFO  Driver:48 : 
+Essai 5/10
+
+2019-05-23 15:39:22 DEBUG Driver:70 : Proposition de l'ordinateur : 5555
+
+2019-05-23 15:39:22 INFO  Driver:140 : L'ordinateur a trouvé la combinaison secrète en 5 essais!!
+
+2019-05-23 15:39:22 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:40:07 INFO  Driver:20 : Start
+2019-05-23 15:40:07 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:40:09 INFO  Driver:30 : On attaque le jeu en mode Defender
+
+2019-05-23 15:40:09 INFO  Driver:27 : Entrez votre code secret à 4 chiffres : 
+
+2019-05-23 15:40:11 DEBUG Driver:35 : mode développeur activé - Le code secret est : 5555
+
+2019-05-23 15:40:11 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:40:11 DEBUG Driver:70 : Proposition de l'ordinateur : 4836
+
+2019-05-23 15:40:11 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:40:11 DEBUG Driver:42 : +
+2019-05-23 15:40:11 DEBUG Driver:34 : -
+2019-05-23 15:40:11 DEBUG Driver:42 : +
+2019-05-23 15:40:11 DEBUG Driver:34 : -
+2019-05-23 15:40:11 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:40:11 DEBUG Driver:70 : Proposition de l'ordinateur : 5745
+
+2019-05-23 15:40:11 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:40:11 DEBUG Driver:50 : =
+2019-05-23 15:40:11 DEBUG Driver:34 : -
+2019-05-23 15:40:11 DEBUG Driver:42 : +
+2019-05-23 15:40:11 DEBUG Driver:50 : =
+2019-05-23 15:40:11 INFO  Driver:48 : 
+Essai 3/10
+
+2019-05-23 15:40:11 DEBUG Driver:70 : Proposition de l'ordinateur : 5655
+
+2019-05-23 15:40:11 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:40:11 DEBUG Driver:50 : =
+2019-05-23 15:40:11 DEBUG Driver:34 : -
+2019-05-23 15:40:11 DEBUG Driver:50 : =
+2019-05-23 15:40:11 DEBUG Driver:50 : =
+2019-05-23 15:40:11 INFO  Driver:48 : 
+Essai 4/10
+
+2019-05-23 15:40:11 DEBUG Driver:70 : Proposition de l'ordinateur : 5555
+
+2019-05-23 15:40:11 INFO  Driver:140 : L'ordinateur a trouvé la combinaison secrète en 4 essais!!
+
+2019-05-23 15:40:11 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
+2019-05-23 15:40:41 INFO  Driver:20 : Start
+2019-05-23 15:40:41 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:40:42 INFO  Driver:30 : On attaque le jeu en mode Dual
+
+2019-05-23 15:40:42 DEBUG Driver:35 : mode développeur activé - Le code secret est : 7468
+
+2019-05-23 15:40:42 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:40:42 INFO  Driver:38 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:40:45 DEBUG Driver:47 : Votre proposition : 5555
+
+2019-05-23 15:40:45 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:40:45 DEBUG Driver:42 : +
+2019-05-23 15:40:45 DEBUG Driver:34 : -
+2019-05-23 15:40:45 DEBUG Driver:42 : +
+2019-05-23 15:40:45 DEBUG Driver:42 : +
+2019-05-23 15:40:45 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:40:45 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:40:45 DEBUG Driver:42 : +
+2019-05-23 15:40:45 DEBUG Driver:50 : =
+2019-05-23 15:40:45 DEBUG Driver:50 : =
+2019-05-23 15:40:45 DEBUG Driver:42 : +
+2019-05-23 15:40:45 INFO  Driver:48 : 
+Essai 3/10
+
+2019-05-23 15:40:45 INFO  Driver:38 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:41:32 INFO  Driver:20 : Start
+2019-05-23 15:41:32 DEBUG Driver:49 : Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel
+
+2019-05-23 15:41:35 INFO  Driver:30 : On attaque le jeu en mode Dual
+
+2019-05-23 15:41:35 DEBUG Driver:35 : mode développeur activé - Le code secret est : 9516
+
+2019-05-23 15:41:35 INFO  Driver:48 : 
+Essai 1/10
+
+2019-05-23 15:41:35 INFO  Driver:38 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:41:38 DEBUG Driver:47 : Votre proposition : 5555
+
+2019-05-23 15:41:38 DEBUG Driver:74 : Proposition de l'ordinateur : 5555
+
+2019-05-23 15:41:38 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:41:38 DEBUG Driver:42 : +
+2019-05-23 15:41:38 DEBUG Driver:50 : =
+2019-05-23 15:41:38 DEBUG Driver:34 : -
+2019-05-23 15:41:38 DEBUG Driver:42 : +
+2019-05-23 15:41:38 INFO  Driver:48 : 
+Essai 2/10
+
+2019-05-23 15:41:38 DEBUG Driver:74 : Proposition de l'ordinateur : 6546
+
+2019-05-23 15:41:38 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:41:38 DEBUG Driver:42 : +
+2019-05-23 15:41:38 DEBUG Driver:50 : =
+2019-05-23 15:41:38 DEBUG Driver:34 : -
+2019-05-23 15:41:38 DEBUG Driver:50 : =
+2019-05-23 15:41:38 INFO  Driver:48 : 
+Essai 3/10
+
+2019-05-23 15:41:38 INFO  Driver:38 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:41:46 DEBUG Driver:47 : Votre proposition : 9555
+
+2019-05-23 15:41:46 DEBUG Driver:74 : Proposition de l'ordinateur : 9555
+
+2019-05-23 15:41:46 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:41:46 DEBUG Driver:50 : =
+2019-05-23 15:41:46 DEBUG Driver:50 : =
+2019-05-23 15:41:46 DEBUG Driver:34 : -
+2019-05-23 15:41:46 DEBUG Driver:42 : +
+2019-05-23 15:41:46 INFO  Driver:48 : 
+Essai 4/10
+
+2019-05-23 15:41:46 DEBUG Driver:74 : Proposition de l'ordinateur : 9546
+
+2019-05-23 15:41:46 DEBUG Driver:25 : Résultat : 
+2019-05-23 15:41:46 DEBUG Driver:50 : =
+2019-05-23 15:41:46 DEBUG Driver:50 : =
+2019-05-23 15:41:46 DEBUG Driver:34 : -
+2019-05-23 15:41:46 DEBUG Driver:50 : =
+2019-05-23 15:41:46 INFO  Driver:48 : 
+Essai 5/10
+
+2019-05-23 15:41:46 INFO  Driver:38 : entrez votre proposition à 4 chiffres : 
+
+2019-05-23 15:41:58 DEBUG Driver:47 : Votre proposition : 9516
+
+2019-05-23 15:41:58 DEBUG Driver:74 : Proposition de l'ordinateur : 9516
+
+2019-05-23 15:41:58 INFO  Driver:109 : Félicitations, vous avez gagné en 5 essais!!
+
+2019-05-23 15:41:58 DEBUG Driver:28 : Voulez-vous rejouer ? (O/N)
+
