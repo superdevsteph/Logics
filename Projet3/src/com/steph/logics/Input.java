@@ -1,6 +1,7 @@
 
 package com.steph.logics;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import org.apache.log4j.Level;
@@ -45,6 +46,7 @@ static	String newLine = System.getProperty("line.separator");
 	public static ModeType getModeType() {
 		int numMode = 0;
 		do {
+			
 			try {
 			logger.log(Level.DEBUG, "Veuillez choisir le Mode : 1 - Attaque, 2 - Défense, 3 - Duel"+newLine);
 			} catch(Exception e) {
@@ -52,10 +54,10 @@ static	String newLine = System.getProperty("line.separator");
 				logger.log(Level.FATAL,"Une exception est survenue", e);
 			}
 			try {
-				numMode = sc.nextInt();
-			} catch (Exception e) {
+				numMode = Integer.parseInt(sc.nextLine());
+			} catch (NumberFormatException e) {
 				logger.log(Level.FATAL,"Erreur de saisie"+newLine);
-				sc.close();
+				
 			}
 		} while (!(numMode >= 1) || !(numMode <=3));
 
