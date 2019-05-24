@@ -1,1 +1,4 @@
+/.DS_Store
 /com/
+/dataConfig.properties
+/log4j.xml
