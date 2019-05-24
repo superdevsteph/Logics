@@ -197,5 +197,8 @@ public abstract class Game {
 	public static int getTurn() {
 		return Essais;
 	}
+	public static boolean isSuccess() {
+		return success;
+	}
 
 }

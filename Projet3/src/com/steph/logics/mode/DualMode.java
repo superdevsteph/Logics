@@ -31,9 +31,10 @@ public class DualMode extends Mode {
 
 	@Override
 	public String getAnswer() {
+		boolean success = Game.isSuccess();
 		Scanner sc = new Scanner(System.in);
 		int turn = Game.getTurn();
-		if (turn % 2 == 1){
+		if (turn % 2 == 1) {
 			try {
 				logger.log(Level.INFO,
 						"entrez votre proposition à " + PropertyLoader.getCodeSize() + " chiffres : " + newLine);
@@ -44,39 +45,41 @@ public class DualMode extends Mode {
 			sc.hasNextLine();
 			answer = sc.nextLine();
 			try {
-				logger.log(Level.DEBUG,
-						"Votre proposition : " + answer + newLine);
+				logger.log(Level.DEBUG, "Votre proposition : " + answer + newLine);
 			} catch (Exception e) {
 
 				logger.fatal("Une exception est survenue", e);
 			}
 
 		} else {
-			char[] proposition = Utils.getProposition(answer);
+			if (success == false) {
+				char[] proposition = Utils.getProposition(answer);
 
-			for (int i = 0; i < proposition.length; i++) {
+				for (int i = 0; i < proposition.length; i++) {
 
-				switch (Game.result[i]) {
+					switch (Game.result[i]) {
 
-				case '-':
-					proposition[i]--;
-					break;
-				case '+':
-					proposition[i]++;
-					break;
-				default:
-					proposition[i] = proposition[i];
+					case '-':
+						proposition[i]--;
+						break;
+					case '+':
+						proposition[i]++;
+						break;
+					default:
+						proposition[i] = proposition[i];
+					}
+				}
+				answer = new String(proposition);
+
+				try {
+					logger.log(Level.DEBUG, "Proposition de l'ordinateur : " + answer + newLine);
+				} catch (Exception e) {
+
+					logger.fatal("Une exception est survenue", e);
 				}
 			}
-			answer = new String(proposition);
 		}
-		try {
-			logger.log(Level.DEBUG,
-					"Proposition de l'ordinateur : " + answer + newLine);
-		} catch (Exception e) {
 
-			logger.fatal("Une exception est survenue", e);
-		}
 		return answer;
 
 	}
