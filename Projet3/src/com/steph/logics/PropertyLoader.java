@@ -1,12 +1,16 @@
 package com.steph.logics;
 
 import java.util.Properties;
+
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.FileInputStream;
 
 public class PropertyLoader {
-
+	static String newLine = System.getProperty("line.separator");
+	private static Logger logger = Logger.getLogger(Driver.class);
 	protected static int codeSize;
 	protected static int NB_DE_TOURS;
 	protected static String devMode;
@@ -21,11 +25,18 @@ public class PropertyLoader {
 		try {
 
 			prop.load(input);
-
-			NB_DE_TOURS = Integer.parseInt(prop.getProperty("NB_DE_TOURS"));
-
+			try {
+				NB_DE_TOURS = Integer.parseInt(prop.getProperty("NB_DE_TOURS"));
+			} catch (NumberFormatException e) {
+				logger.fatal("Erreur de saisie, la valeur par défaut (NB_DE_TOURS = 10) est appliquée."+ newLine);
+				NB_DE_TOURS = 10;
+			}
+			try {
 			codeSize = Integer.parseInt(prop.getProperty("codeSize"));
-
+		} catch (NumberFormatException e) {
+			logger.fatal("Erreur de saisie, la valeur par défaut (codeSize = 4) est appliquée."+ newLine);
+			codeSize = 4;
+		}
 			devMode = prop.getProperty("devMode");
 
 		} finally {

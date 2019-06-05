@@ -17,18 +17,18 @@ public class Driver {
 
 	public static void main(String[] args) {
 		try {
+			
+			Properties prop = PropertyLoader.load("dataConfig.properties");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
 			logger.log(Level.INFO, "Start");
 		} catch (Exception e) {
 
 			logger.fatal("Une exception est survenue", e);
 		}
 
-		try {
-
-			Properties prop = PropertyLoader.load("dataConfig.properties");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 
 		DOMConfigurator.configure(Driver.class.getClassLoader().getResource("log4j.xml"));
 

@@ -1,7 +1,6 @@
 
 package com.steph.logics;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import org.apache.log4j.Level;
